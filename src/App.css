@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Styles du header */
+header {
+  background-color: #333;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styles du menu de navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style des liens actifs */
+nav a:hover, nav a:active {
+  color: #ddd;
+  text-decoration: underline;
+}
+/* Styles pour le conteneur principal */
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Styles pour les articles contenant les données */
+.meals-container article {
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le titre de chaque article */
+.meals-container article p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styles pour le bouton de chargement */
+.meals-container img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/* Styles pour le conteneur principal */
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Styles pour le titre de la page d'accueil */
+.app h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
 }
